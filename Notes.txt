@@ -1,0 +1,24 @@
+
+Want remove or edit a column, remember to do the following:
+
+1. Do a migration : Add-Migration <name of the migration>  very similar to a commit message 
+2. Update the database: Update-Database
+
+
+
+What if you would like to share this database with someone ?
+
+The Update-Database script would simply run the initial first migration in the list Migrations folder to the most recent file and
+its going to roll out all of those changes using the Up and Down method to know what changes it needs to make to create the most recent 
+version of the database.
+
+
+Model - an abstraction of the database table, but in other words a template table\
+
+View Model - an additional abstraction from the actual data model 
+
+Automapper - a library that allows us to do the conversion of the View Model to the actual Model in the data layer easily.
+
+By using a View Model, as the developer you can ramp-up or tone down the level of data the user has access to in a particular view.
+It also allows us to do pre-checks before its passed to the repository.
+

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\daval\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\daval\\.nuget\\packages"
+    ]
+  }
+}

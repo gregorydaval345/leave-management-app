@@ -1,0 +1,3 @@
+# Custom ignores
+!*.dll
+!*.pdb

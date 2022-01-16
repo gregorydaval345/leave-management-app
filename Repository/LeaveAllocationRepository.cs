@@ -39,6 +39,13 @@ namespace leave_management.Repository
             return leaveAllocations;
         }
 
+        public bool isExists(int id)
+        {
+            // A nice way to check if a table is empty or not empty.
+            var exists = _db.LeaveAllocations.Any(q => q.Id == id);
+            return exists;
+        }
+
         public bool Save()
         {
             var changes = _db.SaveChanges();

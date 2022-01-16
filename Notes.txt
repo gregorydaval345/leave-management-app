@@ -22,3 +22,6 @@ Automapper - a library that allows us to do the conversion of the View Model to 
 By using a View Model, as the developer you can ramp-up or tone down the level of data the user has access to in a particular view.
 It also allows us to do pre-checks before its passed to the repository.
 
+Controller - it controls the flow between the users request and the content that is served up.
+
+Dependency injection - referencing one object and it implies what dependency are there for that object.

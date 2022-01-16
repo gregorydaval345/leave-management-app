@@ -39,9 +39,16 @@ namespace leave_management.Repository
             return leaveType;
         }
 
-        public ICollection<LeaveType> GetEmployeesByLeaveType(int id)
+        public ICollection<LeaveType> GetEmployeesByLeaveType(int id)  
         {
             throw new NotImplementedException();
+        }
+
+        public bool isExists(int id)
+        {
+            // A nice way to check if a table is empty or not empty.
+            var exists = _db.LeaveTypes.Any(q => q.Id == id);
+            return exists;
         }
 
         public bool Save()
